@@ -1,0 +1,11 @@
+<div class="main-block">
+  <div class="left-block">
+    <span>{{ master?.position }}</span>
+  </div>
+  <div class="right-block">
+    <a href="#" (click)="clicked($event)"><p><strong> {{ master?.name }}</strong></p></a>
+    <p class="{{ master?.swordColor }}" > {{ master?.swordColor }} </p>
+    <button (click)="description.focus()">Focus</button>
+    <textarea name="message" #description  ></textarea>
+  </div>
+</div>
